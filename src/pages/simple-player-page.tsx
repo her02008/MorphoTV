@@ -50,7 +50,7 @@ function SimplePlayerPage() {
         fastForward: true,
         theme: "#23ade5",
         customType: {
-          m3u8: function playM3u8(video, url, art) {
+          m3u8: function playM3u8(video, url, art:any) {
             if (Hls.isSupported()) {
               if (art.hls) art.hls.destroy();
               const hls = new Hls();
